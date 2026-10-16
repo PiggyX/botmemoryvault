@@ -1,0 +1,16 @@
+{
+  "keys": [
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "x": "29_elKA5YsoCq66roFOQ5Y2s66Invju1bJCulh2aLP4",
+      "kid": "XFHfttye-JcB5TtIVPaz_8qlGsUaGqDX8ODa3tTU1SE",
+      "use": "sig",
+      "alg": "EdDSA",
+      "note": "MOCK-UP KEY - replace with the real vault key at launch"
+    }
+  ],
+  "purpose": "Verification key for the signed logo /brand/logo.svg (spec bmv-logo-v2).",
+  "status": "MOCK-UP KEY: will be replaced by the real vault key at launch; then also published in /.well-known/jwks.json",
+  "verify": "Ed25519 over the UTF-8 bytes of logo.svg with the text content of <bmv:signature> emptied; kid = RFC 7638 JWK thumbprint. The SVG's metadata still links /.well-known/jwks.json (not live yet); use this file until launch."
+}
